@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="ui-container">
+            <div class="score-panel">
+                <div class="score-item">
+                    <span class="label">MARIO</span>
+                    <span class="value" id="score">000000</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">COINS</span>
+                    <span class="value" id="coins">×00</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">WORLD</span>
+                    <span class="value">1-1</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">TIME</span>
+                    <span class="value" id="time">400</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">LIVES</span>
+                    <span class="value" id="lives">×3</span>
+                </div>
+            </div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div class="game-over-screen" id="gameOverScreen">
+            <h1>GAME OVER</h1>
+            <p>Press SPACE to restart</p>
+        </div>
+        <div class="start-screen" id="startScreen">
+            <h1>SUPER MARIO</h1>
+            <p>Press SPACE to start</p>
+            <div class="controls">
+                <p>Controls:</p>
+                <p>← → Arrow Keys: Move</p>
+                <p>SPACE: Jump</p>
+                <p>SHIFT: Run</p>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
